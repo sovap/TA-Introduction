@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171115 14:09:48.382" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\Users\sovap\Desktop\Projects\Training\framework_examples\01_linear\01_linear_test.robot" id="s1" name="01 Linear Test">
+<test id="s1-t1" name="Validate title of robot framework web page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://google.cz</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20171115 14:09:48.585" level="INFO">Opening browser 'chrome' to base url 'https://google.cz'</msg>
+<status status="PASS" endtime="20171115 14:09:55.032" starttime="20171115 14:09:48.585"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20171115 14:09:56.160" starttime="20171115 14:09:55.035"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+<arg>Robot Framework</arg>
+</arguments>
+<msg timestamp="20171115 14:09:56.162" level="INFO">Typing text 'Robot Framework' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20171115 14:09:56.380" starttime="20171115 14:09:56.160"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" endtime="20171115 14:09:57.735" starttime="20171115 14:09:56.380"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>link=Robot Framework</arg>
+</arguments>
+<msg timestamp="20171115 14:09:57.735" level="INFO">Clicking element 'link=Robot Framework'.</msg>
+<status status="PASS" endtime="20171115 14:09:58.057" starttime="20171115 14:09:57.735"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Robot Framework</arg>
+</arguments>
+<msg timestamp="20171115 14:10:04.003" level="INFO">Page title is 'Robot Framework'.</msg>
+<status status="PASS" endtime="20171115 14:10:04.003" starttime="20171115 14:09:58.060"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171115 14:10:07.103" starttime="20171115 14:10:04.003"></status>
+</kw>
+<status status="PASS" endtime="20171115 14:10:07.103" critical="yes" starttime="20171115 14:09:48.585"></status>
+</test>
+<test id="s1-t2" name="Validate title of selenium webdriver web page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://google.cz</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20171115 14:10:07.103" level="INFO">Opening browser 'chrome' to base url 'https://google.cz'</msg>
+<status status="PASS" endtime="20171115 14:10:12.618" starttime="20171115 14:10:07.103"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20171115 14:10:13.813" starttime="20171115 14:10:12.618"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+<arg>Selenium WebDriver</arg>
+</arguments>
+<msg timestamp="20171115 14:10:13.815" level="INFO">Typing text 'Selenium WebDriver' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20171115 14:10:14.070" starttime="20171115 14:10:13.813"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" endtime="20171115 14:10:14.953" starttime="20171115 14:10:14.070"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>link=Selenium WebDriver</arg>
+</arguments>
+<msg timestamp="20171115 14:10:14.955" level="INFO">Clicking element 'link=Selenium WebDriver'.</msg>
+<status status="PASS" endtime="20171115 14:10:17.391" starttime="20171115 14:10:14.955"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Selenium WebDriver</arg>
+</arguments>
+<msg timestamp="20171115 14:10:17.396" level="INFO">Page title is 'Selenium WebDriver'.</msg>
+<status status="PASS" endtime="20171115 14:10:17.398" starttime="20171115 14:10:17.391"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171115 14:10:20.500" starttime="20171115 14:10:17.398"></status>
+</kw>
+<status status="PASS" endtime="20171115 14:10:20.500" critical="yes" starttime="20171115 14:10:07.103"></status>
+</test>
+<status status="PASS" endtime="20171115 14:10:20.500" starttime="20171115 14:09:48.382"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="01 Linear Test" pass="2">01 Linear Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
