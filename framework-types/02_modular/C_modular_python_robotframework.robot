@@ -2,38 +2,39 @@
 Library     Selenium2Library
 
 *** Keywords ***  
-Open chrome browser with Google page
-    Open Browser                https://google.cz           chrome
+Open Browser With Google
+    Create Webdriver            Chrome
     Maximize Browser Window
+    Go To                       https://google.cz
 
-Navigate to Robot Framework page
+Navigate To Robot Framework Page
     Input Text                  id=lst-ib                   Robot Framework
     Press Key                   id=lst-ib                   \\13
     Click Element               link=Robot Framework
     
-Navigate to Selenium WebDriver page
+Navigate To Selenium WebDriver Page
     Input Text                  id=lst-ib                   Selenium WebDriver
     Press Key                   id=lst-ib                   \\13
     Click Element               link=Selenium WebDriver
 
-Validate title of Robot Framework page
+Validate Robot Framework Page Title
     Title Should Be             Robot Framework
     
-Validate title of Selenium WebDriver page
+Validate Selenium WebDriver Page Title
     Title Should Be             Selenium WebDriver
 
-Shut down execution
+Close The Browser
     Close Browser
 
 *** Test cases ***
 Validate title of robot framework web page
-    Open chrome browser with Google page
-    Navigate to Robot Framework page
-    Validate title of Robot Framework page
-    Shut down execution
+    Open Browser With Google
+    Navigate To Robot Framework Page
+    Validate Robot Framework Page Title
+    Close The Browser
     
 Validate title of selenium webdriver web page
-    Open chrome browser with Google page
-    Navigate to Selenium WebDriver page
-    Validate title of Selenium WebDriver page
-    Shut down execution
+    Open Browser With Google
+    Navigate To Selenium WebDriver Page
+    Validate Selenium WebDriver Page Title
+    Close The Browser

@@ -1,1 +1,5 @@
-# Ignore following folders
+# Ignore following
+log.html
+output.xml
+report.html
+~*.xlsx

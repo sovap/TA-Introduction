@@ -1,1 +1,0 @@
-robot --outputdir results_all ..\01_linear\01_linear_test.robot ..\02_modular\02_modular_test.robot ..\03_library_architecture\03_library_test.robot ..\04_keyword_driven\04_keyword_test.robot ..\05_data_driven\05_data_test.robot ..\06_hybrid\tests\06_hybrid_test.robot
