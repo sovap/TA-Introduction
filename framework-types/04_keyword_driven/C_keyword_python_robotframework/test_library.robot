@@ -1,6 +1,5 @@
 | *** Settings ***         |                         |                    |               |
 | Library                  | Selenium2Library        |                    |               |
-| Resource                 | object_repository.robot |                    |               |
 | Resource                 | test_data.robot         |                    |               |
 
 | *** Keywords ***         |                         |                    |               |
@@ -9,8 +8,8 @@
 |                          | Maximize Browser Window |                    |               |
 | Navigate To Page         |                         |                    |               |
 |                          | [Arguments]             | ${page_title}      |               |
-|                          | Input Text              | ${SEARCH_INPUT}    | ${page_title} |
-|                          | Press Key               | ${SEARCH_INPUT}    | ${ENTER_KEY}  |
+|                          | Input Text              | id=lst-ib          | ${page_title} |
+|                          | Press Key               | id=lst-ib          | \\13          |
 |                          | Click Element           | link=${page_title} |               |
 | Validate Page Title      |                         |                    |               |
 |                          | [Arguments]             | ${page_title}      |               |

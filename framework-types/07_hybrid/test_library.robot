@@ -1,6 +1,6 @@
 *** Settings ***
 Library     Selenium2Library
-Resource    object_repository.robot
+Resource    test_repository.robot
 
 *** Keywords ***  
 Open browser with url

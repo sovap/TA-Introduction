@@ -3,9 +3,8 @@ Library     Selenium2Library
 
 *** Keywords ***  
 Open Browser With Google
-    Create Webdriver            Chrome
+    Open Browser                https://google.cz           Chrome
     Maximize Browser Window
-    Go To                       https://google.cz
 
 Navigate To Page
     [Arguments]                 ${page_title}

@@ -3,9 +3,8 @@ Library     Selenium2Library
 
 *** Test cases ***
 Title test for page: Robot Framework  
-    Create Webdriver            Chrome
+    Open Browser                https://google.cz           Chrome
     Maximize Browser Window
-    Go To                       https://google.cz
     Input Text                  id=lst-ib                   Robot Framework
     Press Key                   id=lst-ib                   \\13
     Click Element               link=Robot Framework
@@ -13,9 +12,8 @@ Title test for page: Robot Framework
     Close Browser
     
 Title test for page: Selenium WebDriver  
-    Create Webdriver            Chrome
+    Open Browser                https://google.cz           Chrome
     Maximize Browser Window
-    Go To                       https://google.cz
     Input Text                  id=lst-ib                   Selenium WebDriver
     Press Key                   id=lst-ib                   \\13
     Click Element               link=Selenium WebDriver

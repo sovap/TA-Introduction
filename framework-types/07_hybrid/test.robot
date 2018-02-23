@@ -1,6 +1,6 @@
 *** Settings ***
-Resource    ./resources/data.robot
-Resource    ./resources/generic_library.robot
+Resource    test_data.robot
+Resource    test_library.robot
 
 *** Test cases ***
 Validate title for all pages                

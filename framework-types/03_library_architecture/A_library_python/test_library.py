@@ -4,8 +4,8 @@ from selenium.webdriver.common.keys import Keys
 #### modules (functions)
 def OpenBrowserWithGoogle():
     driver = webdriver.Chrome()
-    driver.maximize_window()
     driver.get("https://www.google.cz")
+    driver.maximize_window()
     return driver
 
 def NavigateToPage(driver, page_title):

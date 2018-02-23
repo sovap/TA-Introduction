@@ -1,1 +1,0 @@
-robot --outputdir results tests\06_hybrid_test.robot

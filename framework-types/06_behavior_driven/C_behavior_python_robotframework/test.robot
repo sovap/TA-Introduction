@@ -2,38 +2,41 @@
 Library     Selenium2Library
 
 *** Keywords ***  
-Open Browser With Google
+browser with google is opened
     Open Browser                https://google.cz           Chrome
     Maximize Browser Window
 
-Navigate To Robot Framework Page
+user search for robot framework page
     Input Text                  id=lst-ib                   Robot Framework
     Press Key                   id=lst-ib                   \\13
-    Click Element               link=Robot Framework
-    
-Navigate To Selenium WebDriver Page
+
+user search for selenium webdriver page
     Input Text                  id=lst-ib                   Selenium WebDriver
     Press Key                   id=lst-ib                   \\13
+
+user navigate to robot framework page
+    Click Element               link=Robot Framework
+
+user navigate to selenium webdriver page
     Click Element               link=Selenium WebDriver
 
-Validate Robot Framework Page Title
+title of opened page is robot framework
     Title Should Be             Robot Framework
+    Close Browser
     
-Validate Selenium WebDriver Page Title
+title of opened page is selenium webdriver
     Title Should Be             Selenium WebDriver
-
-Close The Browser
     Close Browser
 
 *** Test cases ***
 Validate title of robot framework web page
-    Open Browser With Google
-    Navigate To Robot Framework Page
-    Validate Robot Framework Page Title
-    Close The Browser
+    Given browser with google is opened
+    When user search for robot framework page
+    And user navigate to robot framework page
+    Then title of opened page is robot framework         
     
 Validate title of selenium webdriver web page
-    Open Browser With Google
-    Navigate To Selenium WebDriver Page
-    Validate Selenium WebDriver Page Title
-    Close The Browser
+    Given browser with google is opened
+    When user search for selenium webdriver page
+    And user navigate to selenium webdriver page
+    Then title of opened page is selenium webdriver

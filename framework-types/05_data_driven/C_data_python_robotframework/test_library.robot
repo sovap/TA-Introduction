@@ -19,3 +19,10 @@ Navigate to web page
 Validate page title
     [Arguments]                 ${page_title}
     Title Should Be             ${page_title}
+
+Validate title for page
+    [Arguments]                 ${title}
+    Open browser with url       ${GOOGLE_URL}       ${BROWSER}
+    Navigate to web page        ${title}
+    Validate page title         ${title}
+    Shut down execution
